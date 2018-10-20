@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>resturant</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" -->
+    <!-- crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+    <link rel="shortcut icon" type="image/png" href="image/logo.jpg" sizes="16x16" />
+
+
+</head>
+
+<body>
+    <!-- log in form-->
+    <div class="container login-form">
+        <h2 class="login-title">- Please Login -</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form>
+                    <div class="input-group login-userinput">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input id="txtUser" type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input id="txtPassword" type="password" class="form-control" name="password" placeholder="Password">
+                        <span id="showPassword" class="input-group-btn">
+                            <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+                        </span>
+                    </div>
+                    <button class="btn btn-dark btn-block login-button" type="submit"><i class="fa fa-sign-in"></i>
+                        Login</button>
+                    <div class="checkbox login-options">
+                        <label><input type="checkbox" /> Remember Me</label>
+                        <a href="#" class="login-forgot">Forgot Username/Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- home page body -->
+
+    <div class="home-page-body text-center">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+            <div class="button-nav"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav sec-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#">الخرائط</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">خدمة العملاء</a> </li>
+
+                    <li class="nav-item"> <a class="nav-link" href="#">الشروط والاحكام</a> </li>
+
+                    <li class="nav-item"> <a class="nav-link" href="#">الباقة</a> </li>
+
+                    <li class="nav-item active"> <a class="nav-link active" href="#">اطلب</a> </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="order-cart">
+            <div id="wrapper">
+                <div id="inputs">
+                    <div>
+                        <form name="input" action="#" method="post" class="order">
+                            <h1>Your Order</h1>
+                            <br /><br />
+                            <input type="text" name="order-detiles" placeholder="">  تفاصيل الطلب 
+                            <br /><br /><br />
+                            <input type="email" name="email" placeholder="">  العنوان 
+                            <br /><br /><br />
+                            <input type="submit" value="اطلب" href="#">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="javascript/javascript.js"></script>
+</body>
+
+</html>
